@@ -1,4 +1,4 @@
-# DR-Product=Card
+# DR-Product-Card
 
 Es un paquete de pruebas de despliegue en NPM
 

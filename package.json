@@ -7,6 +7,11 @@
         "dist",
         "src"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DarwinRuiz/dr-product-card"
+    },
+    "homepage": "https://darwin-ruiz.com",
     "engines": {
         "node": ">=10"
     },
@@ -17,7 +22,8 @@
         "lint": "tsdx lint",
         "prepare": "tsdx build",
         "size": "size-limit",
-        "analyze": "size-limit --why"
+        "analyze": "size-limit --why",
+        "test:watch": "tsdx test --watch"
     },
     "peerDependencies": {
         "react": ">=16"
@@ -47,11 +53,19 @@
         }
     ],
     "devDependencies": {
+        "@babel/preset-env": "^7.25.7",
+        "@babel/preset-react": "^7.25.7",
         "@rollup/plugin-image": "^3.0.3",
         "@size-limit/preset-small-lib": "^11.1.6",
+        "@testing-library/dom": "^10.4.0",
+        "@testing-library/react": "^16.0.1",
+        "@types/jest": "^29.5.13",
         "@types/react": "^18.3.11",
         "@types/react-dom": "^18.3.0",
+        "babel-jest": "^29.7.0",
         "husky": "^9.1.6",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^25.5.4",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "rollup-plugin-postcss": "^4.0.2",
@@ -59,5 +73,17 @@
         "tsdx": "^0.14.1",
         "tslib": "^2.7.0",
         "typescript": "^3.9.10"
+    },
+    "keywords": [
+        "product",
+        "card",
+        "darwin",
+        "ruiz"
+    ],
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+            "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+        }
     }
 }
