@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1",
+    "version": "1.0.0-rc",
     "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/DarwinRuiz/dr-product-card"
+        "url": "https://github.com/DarwinRuiz/drm-product-card"
     },
     "homepage": "https://darwin-ruiz.com",
     "engines": {
@@ -39,16 +39,16 @@
         "singleQuote": true,
         "trailingComma": "es5"
     },
-    "name": "dr-product-card",
+    "name": "drm-product-card",
     "author": "Darwin Ruiz",
-    "module": "dist/dr-product-card.esm.js",
+    "module": "dist/drm-product-card.esm.js",
     "size-limit": [
         {
-            "path": "dist/dr-product-card.cjs.production.min.js",
+            "path": "dist/drm-product-card.cjs.production.min.js",
             "limit": "10 KB"
         },
         {
-            "path": "dist/dr-product-card.esm.js",
+            "path": "dist/drm-product-card.esm.js",
             "limit": "10 KB"
         }
     ],
